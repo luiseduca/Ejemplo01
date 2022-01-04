@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+
+    <!-- Iniciamos nuestro menu de la pagina -->
+    <nav>
+        <ul class="menu">
+            <li class="logo">
+                <a href="#">
+                    <!-- Agegar imagen del logo-->
+                    <img src="./img/logo.png">
+                </a>
+            </li>
+            <li>
+                <a href="./index.html"> Inicio </a>
+            </li>
+            <li>
+                <a href="./contactenos.html"> Contactenos </a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <h1> Personajes de Rick and Morty</h1>
+
+        <div>
+            <form>
+                <section class="section-flex">
+
+                    <article class="elemnt-form">
+                        <div class="label">
+                            <label for="">Tipo de mensaje</label>
+                        </div>
+                        <select name="tipomensaje" id="tipomensaje">
+                            <option value="-">Seleccione una Opcion</option>
+                            <option value="1">Cotizacion</option>
+                            <option value="2">Salud</option>
+                            <option value="3">Queja</option>
+                        </select>
+
+                    </article>
+
+                    <article class="elemnt-form">
+                        <div class="label">
+                            <label for="">Nombres</label>
+                        </div>
+                        <input type="text" name="nombres" id="nombres" placeholder="Escribe tu nombre completo">
+                    </article>  
+                    
+                    <article class="elemnt-form">
+                        <div class="label">
+                            <label for="">Email</label>
+                        </div>
+                        <input type="text" name="email" id="email" placeholder="Escribe tu correo">
+                    </article> 
+
+                    <article class="elemnt-form">
+                        <div class="label">
+                            <label for="">Comentario</label>
+                        </div>
+                        <textarea name="comentario" id="comentario" cols="100" rows="10"></textarea>
+                    </article> 
+
+                    <article class="elemnt-form">
+                        <div class="label">
+                            <label for="">Que estudias</label>
+                        </div>
+                        <input type="checkbox" name="echk1" id="echk1" value="html"> HTML
+                        <input type="checkbox" name="echk2" id="echk2" value="css"> CSS
+                        <input type="checkbox" name="echk3" id="echk3" value="js"> JAVASCRIPT
+                    </article> 
+
+                    <article class="btn-article">
+                        <button type="submit" onclick="validar()"> Enviar Datos </button>                       
+                    </article> 
+
+                </section>
+            </form>
+        </div>
+
+    </div>
+
+
+    <footer>
+        <p> Creado por Cristhian Galvis </p>
+    </footer>
+
+    <script src="./js/javascript.js"></script>
+
+</body>
+</html>
